@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NEWWAVE CHURCH</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <img src="/images/banner.png" alt="" width="100%">
+        <div id="loginInfo">
+            email : <input type="text" id="email">
+
+            password : <input type="password" id="password">
+
+            <input type="button" value="로그인" onclick="printUserInfo()">
+        </div>
+
+        <p>청년과 다음세대를 덮는 복음의 파도🌊</p>
+        <br>
+        <p>주일예배 ㅣ 오후 2시</p>
+        <br>
+        <p>📍부산대학로 63번길 33 2층</p>
+        <br>
+        <p>www.youtube.com/@NEWWAVE_CHURCH</p>
+    
+
+        <script>
+            function printUserInfo() {
+                var email = document.getElementById('email').value
+                var password = document.getElementById('password').value
+                var userInfo = "이메일 : " + email + ", 패스워드 : " + password
+                alert(userInfo)
+            }
+        </script>
+        <br>
+
+
+
+        <button type="button">지도 보기</button>
+        <br>
+        <hr>
+        <video src="/medias/christmas.mp4" width="100%" muted autoplay loop></video>
+        <hr>
+        <!-- 버튼은 모양은 , button 태그, input ,type=button 이용하거나, 
+    사용 용도 : 백엔드 서버에 데이터 전달시 많이 이용할거다.  -->
+
+        <hr>
+        <h3>일정</h3>
+        <ol>
+            <li>말씀사경회 : 2/16(금) ~ 2/17(토)</li>
+            <li>부산대학교 졸업식 : 2/23(금)</li>
+            <li>Adobe Stock 종료 : 2/26(월)</li>
+        </ol>
+        <input type="button" value="bright mode" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+        <input type="button" value="dark mode" onclick="
+        document.querySelector('body').style.backgroundColor = 'rgb(66, 66, 66)';
+        document.querySelector('body').style.color = 'white';
+        ">
+        <hr>
