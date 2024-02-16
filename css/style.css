@@ -1,6 +1,6 @@
 
 p {
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     margin: 0;
 }
@@ -16,6 +16,7 @@ body {
 #loginInfo {
     text-align: right;
 }
+
 
 .color {
     color: rgb(66, 66, 66);
